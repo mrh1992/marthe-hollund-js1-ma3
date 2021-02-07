@@ -1,12 +1,12 @@
 // Question 2
 
-const url = "https://api.rawg.io/api/games?dates=2019-01-01,2019-12-31&ordering=-rating";
+const gamesUrl = "https://api.rawg.io/api/games?dates=2019-01-01,2019-12-31&ordering=-rating";
 
 const resultsContainer = document.querySelector(".results");
 
 async function getGames() {
     
-    const response = await fetch(url);
+    const response = await fetch(gamesUrl);
 
     const games = await response.json();
 
