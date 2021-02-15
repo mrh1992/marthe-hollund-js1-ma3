@@ -20,7 +20,7 @@ async function getGames() {
         }
     
 
-        resultsContainer.innerHTML += `<div class="result">${games[i.name]}</div>`;
+        resultsContainer.innerHTML += `<div class="result">${games[i].name}</div>`;
     }
 }
 
